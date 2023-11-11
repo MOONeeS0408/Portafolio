@@ -1,17 +1,47 @@
-/* Barra de navegacion */
-
+/* BARRA DE NAVEGACIÓN */
 .navbar {
-  padding: 2rem;
-  background-color: #f5f6f7;
+  background-color: #6c00aa;
 }
 
 .navbar-collapse {
   align-items: center;
-  justify-content: space-between;  
+  justify-content: space-between; 
+
 }
 
-/* Estilos generales */
+/* anclas de la barra de navegacion */
+.navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-right: 15px; 
+  font-family: 'Poppins', sans-serif;
 
+}
+
+/* hover a los link de la barra de navegación */
+.navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  color: rgb(232, 213, 255);
+}
+
+/* Este es para la parte de mi nombre en la barra de navegación */
+.navbar .navbar-brand h1{
+  color: aliceblue; 
+  padding: 5px;
+  font-size: 24px;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar .navbar-brand h1:hover {
+   /* border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;  */
+  border-color:  rgb(204, 161, 255);
+  color: rgb(232, 213, 255);
+}
+
+
+/* Estilos generales */
 section {
   display: flex;
   flex-direction: column;
@@ -19,14 +49,10 @@ section {
   justify-content: center;
 }
 
-h1 {
-  font-size: 2.5rem;
-  font-family: 'Rubik Dirt', cursive;
-}
 
 .seccion-oscura {
   color: white;
-  background-color: #1b1b32;
+  background-color: #540085;
 }
 
 .seccion-clara {
@@ -34,24 +60,20 @@ h1 {
   background-color: white;
 }
 
+/* PARA TITULOS DE LAS SECCIONES */
 .seccion-titulo {
-  font-size: 2rem;
-  padding: 15px 0;
-  font-family: 'Rubik Dirt', cursive;
+  font-size: 3.5rem;
+  padding: 10px 0;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
 }
 
-.seccion-descripcion {
-  font-size: 1.2rem;
-  color: #584e4e;
-}
 
-.seccion-texto {
-  font-size: 1.2rem;
-}
 
 .btn-info {
   font-size: 1.1rem;
   margin: 20px;
+  
 }
 
 .texto-negro {
@@ -75,14 +97,19 @@ h1 {
 }
 
 .hero-imagen-desarrollador {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   margin: 20px;
 }
 
 .hero-principal h2 {
   font-size: 1.5rem;
-  color: #615151;
+  /* color: #000000; */
+}
+
+.hero .hero-principal h1{
+  font-size: 2.5rem;
+  font-family: 'Dancing Script', cursive;
 }
 
 /* Sobre mi */
@@ -94,8 +121,16 @@ h1 {
 
 .sobre-mi .contenedor {
   max-width: 600px;
-  text-align: center;
 }
+
+/* SECCION TEXTO PARA SECCION SOBRE MI */
+.seccion-texto {
+  font-size: 1.5rem;
+  text-align: justify;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 2rem;
+}
+
 
 /* Experiencia */
 
@@ -115,7 +150,7 @@ h1 {
 
 .experiencia .columna:hover {
   color: white;
-  background-color: #1b1b32;
+  background-color: #540085;
 }
 
 .experiencia i {
@@ -152,13 +187,13 @@ h1 {
   height: 100%;
   width: 100%;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 25px;
   display: block;
   transition: all 0.2s ease;
 }
 
 .proyectos-contenedor {
-  padding-top: 60px;
+  padding-top:60px; 
   margin-bottom: 40px;
 }
 
@@ -182,10 +217,12 @@ h1 {
   position: relative;
 }
 
+/* Opacidad de imagen en los proyectos */
 .proyecto:hover img {
-  opacity: 0.2;
+  opacity: 0.3;
 }
 
+/* Opacidad de texto en los proyectos */
 .proyecto:hover .overlay {
   opacity: 1;
 }
@@ -265,7 +302,7 @@ h1 {
 
 .contacto .rectangulo {
   margin-top: -5rem;
-  background-color: rgb(13, 110, 253);
+  background-color: rgb(171, 106, 255);
   border-radius: 10px;
   box-shadow: 0px 1px 4px 1px white;
 }
@@ -279,6 +316,8 @@ h1 {
 .contacto .descripcion {
   color: white;
   font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
 }
 
 .contacto button {
@@ -294,7 +333,7 @@ h1 {
 
 .contacto button:hover {
   background-color: white;
-  color: black;
+  color: rgb(145, 10, 255);
 }
 
 .contacto button i {
@@ -304,7 +343,7 @@ h1 {
 }
 
 .contacto button:hover i {
-  color: black;
+  color: rgb(145, 10, 255);
 }
 
 /* Pie de pagina (footer) */
